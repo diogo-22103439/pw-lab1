@@ -1,0 +1,35 @@
+body {background-color: #a8acd3; font-family: Brush Script MT;}.important {color: rgb(0, 9, 128)}
+
+#setStyle1 { border-style: dotted; border-width: 5px; border-radius: 3px; }
+#setStyle2 { border-style: dashed; border-width: 5px; border-radius: 3px;}
+#setStyle3 { box-shadow: 1px 1px grey; border-width: 5px; border-radius: 3px;}
+#sectionStyle1:hover { background-color: #515886; color: #08d3f7;}
+#sectionStyle2:hover { background-color: #364080; color: #08d3f7;}
+#html5Description { background-color: #364080; color: #08d3f7;}
+#cssDescription { background-color: #364080; color: #08d3f7;}
+
+[target = "foto"] { 
+    background: red;
+    border-spacing: 2cm;
+    border-color: green;
+    border-style: outset;
+}
+
+h2, h3, div {font-family: "Comic Sans", cursive;}
+h1 {font-family: 'Hurricane', cursive;}
+
+div:hover {background-color: #515886; color: #08d3f7;}
+div > p { color: #3d88df;}
+div p {font-family: 'Apple Chancery', cursive;}
+div + p { color: #3d88df;}
+
+a:hover{background-color:gold;}
+a::before{content:gold;}
+a::after{content: gold;}
+
+a:visited {color:rgb(38, 53, 61);}
+
+input{display: block;}
+
+
+

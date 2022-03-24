@@ -1,0 +1,91 @@
+* {font-family: 'Hurricane', cursive;}
+
+body { background-color: azure; }
+
+h1{text-align: center;}
+.capitais { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img{
+    border-radius: 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width:  150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+
+.menu a:hover {
+    background-color: rgb(155, 151, 151);
+    font-weight: bold;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+.cabecalho{
+    display: flex;
+    background-image: url("../lab4/images/head.jpg");
+    height: 200px; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.dicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+}
+
+.dicas div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px #888888;
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+

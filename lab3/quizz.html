@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diogo Silva">
+    <meta name="keywords" content="Lisboa">
+    <meta name="description" content="Website sobre Lisboa">
+    <link rel="shortcut icon" type="image/x-icon" href="../lab2/images/Portugal.ico"/>
+    <link rel="stylesheet" href="../lab3/estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+    </style>
+
+    <title>Lisboa</title>
+
+    <h1>Lisboa</h1>
+    
+    <figure>
+        <img src="../lab2/images/lisboa-300x300.jpg">
+    </figure>
+    
+</head>
+
+<body>
+    
+
+    <nav><a href="../lab2/index.html" target="blank_"><b> 📋 Introdução</b></a>
+        <a href="../lab2/local.html" target="blank_"><b>🗺 Localização</b></a>
+        <a href="../lab2/multimedia.html" target="blank_"><b>📷 Multimédia</b></a>
+        <a href="../lab2/info.html" target="blank_"><b>🗃 Informações</b></a>
+        <a href="../lab3/quizz.html" target="blank_"><b>🧮 Quizz</b></a>
+        <a href="../lab3/html5-css.html" target="blank_"><b>🖥 Html5-CSS</b></a>
+        <a href="../index.html" target="blank_"><b>🏠 Home</b></a>
+    </nav>
+
+<h3>Quizz</h3>
+
+<p class="important">Nesta pagina será feito um quizz de forma a verificar o 
+    conhecimento do utilizador sobre a cidade apresentada</p>
+
+<form method="POST" action="mailto: a22103439@alunos.ulht.pt" enctype="multipart/form-data">
+    <fieldset id = "setStyle1">
+        <legend>Quizz sobre a cidade Lisboa</legend>
+
+        <fieldset id = "setStyle1">
+            <legend>Info</legend>
+            <p id="first">Nome: <input type="text" name="nome" autocomplete="on" size="15" autofocus required></p>
+            <p id="first">Apelido: <input type="text" name="apelido" size="15" autocomplete="on" required ></p>
+            <p id="first">Email: <input type="text" name="email" autocomplete="on" pattern="A@aZ.z{6}" placeholder="exemplo@hotmail.com" required></p>
+        </fieldset>
+
+        <fieldset id = "setStyle1">
+            <legend>Perguntas</legend>
+            Data de nascimento do primeiro rei de Portugal: <input type="date" name="dataNascimento">
+            <hr>
+            Nome do primeiro rei de Portugal: <input type="text" name="pais" maxlength="20">
+            <hr>
+            Qual o numero de cidadões desta cidade:
+                <input type="radio" name="numeroCCerta" value="504 718" id="numeroCCerta">
+                <label for="numeroCCerta">504 718</label>
+                
+                <input type="radio" name="numeroCErrada1" value="100 200" id="numeroCErrada1">
+                <label for="numeroCErrada1">100 200</label>
+
+                <input type="radio" name="numeroCErrada2" value="300 000" id="numeroCErrada2">
+                <label for="numeroCErrada2">300 000</label>
+            <hr>
+
+                Onde é que podemos encontrar o estádio José de Alvalade?
+                <input type="checkbox" name="localidadeCerto" value="Campo Grande" id="localidadeCerto">
+                <label for="localidadeCerto">Campo Grande</label>
+
+                <input type="checkbox" name="localidadeErrado1" value="Chelas" id="localidadeErrado1">
+                <label for="localidadeErrado1">Chelas</label>
+
+                <input type="checkbox" name="localidadeErrado2" value="Vialonga" id="localidadeErrado2">
+                <label for="localidadeErrado2">Vialonga</label>
+
+            <hr>
+                Selecione as cores do equipamento do Sporting:
+                <input type="color" name="verde" id="verde">
+                <input type="color" name="branco" id="branco">
+            <hr>
+                Quantas municípios existe dentro de Lisboa?
+                <input type="number" name="16" min="0" max="20" id="16">
+            <hr>
+                Qual as dimensões do estádio Jose de Alvalade:
+            <input type="range" name="1906" min="0" max="105" id="1906"
+            oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">0</output> %
+
+            <hr>
+
+                Qual o nome da claque mais antiga do Sporting?
+                <select name="torre" id="torre">
+                    <option value="Juveleo">Juveleo</option>
+                    <option value="Diretivos">Diretivos</option>
+                    <option value="WBG">WBG</option>
+                    <option value="STK">STK</option>
+                </select>
+
+            <hr>
+
+                Qual a capital de Portugal?
+                <input list="Capital" >  
+                    <datalist id="Capital">
+                        <option value="Lisboa">Lisboa</option>
+                        <option value="Kingston">Kingston</option>
+                        <option value="Paris">Paris</option>
+                    </datalist>
+            <hr>
+            
+            
+                Insira a sua opinião sobre este quizz na caixa abaixo:
+            <p></p>
+
+            <textarea name="" id="" cols="50" rows="20">
+            </textarea>
+            <hr>
+            
+            <input type="submit" name="Submissao" id="Submissao"  multiple> 
+            
+        </fieldset>
+
+
+    </fieldset>
+    
+</form>
+
+
+
+</body>
+</html>
