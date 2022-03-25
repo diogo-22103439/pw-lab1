@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+* {box-sizing: border-box;}
 * {font-family: 'Hurricane', cursive;}
 
 body { background-color: azure; }
 
-h1{text-align: center;}
+h1:not(.dicas h1){text-align: center;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Pacifico', cursive;}
+
 .capitais { 
     display: flex;
     flex-flow: row wrap;
@@ -11,6 +19,11 @@ h1{text-align: center;}
     background-color: rgb(238, 248, 248);
     padding: 50px;
 }
+
+.capitais p { 
+    font-size: 34px;
+}
+
 
 .capitais > div {
     display: flex;
@@ -38,6 +51,7 @@ h1{text-align: center;}
 
 .menu {
     display: flex;
+    font-size: 20px;
 }
 
 .menu a {
@@ -47,7 +61,7 @@ h1{text-align: center;}
 }
 
 .menu a:hover {
-    background-color: rgb(155, 151, 151);
+    background-color: rgb(238, 248, 248);;
     font-weight: bold;
 }
 
@@ -58,12 +72,13 @@ h1{text-align: center;}
 .cabecalho{
     display: flex;
     background-image: url("../lab4/images/head.jpg");
+    background-size: cover;
     height: 200px; 
-    color: white;
+    color: rgb(253, 253, 253);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 8rem;
 }
 
 .dicas{
@@ -75,10 +90,19 @@ h1{text-align: center;}
     padding: 50px;
 }
 
+.dicas h1{
+    position: relative;
+    top: 0px;
+    left: 5px;
+}
+
+.dicas p{
+    font-size: 23px;
+}
+
 .dicas div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 15px #888888;
     border-radius: 10px;
@@ -88,4 +112,137 @@ h1{text-align: center;}
     margin: 10px;
     padding: 20px;
 }
+
+.destinos {
+    justify-content: center;
+    display: grid;
+    background-color: rgb(238, 248, 248);
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.destinos > div {
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destinos .item1 {
+    background-image: url('images/1.jpg');
+    grid-area: img1;
+}
+.destinos .item2 {
+    background-image: url('images/2.jpg');
+    grid-area: img2;
+}
+.destinos .item3 {
+    background-image: url('images/3.webp');
+    grid-area: img3;
+}
+.destinos .item4 {
+    background-image: url('images/4.jpg');
+    grid-area: img4;
+}
+.destinos .item5 {
+    background-image: url('images/5.jpg');
+    grid-area: img5;
+}
+
+.destinos .item6{
+    grid-area: img6;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 150px;
+    grid-template-rows: 300px 100px;
+    grid-template-areas:
+    'img6_1 img6_1' 
+    'img6_2 img6_3';
+}
+
+.destinos .item6 .imagem{
+    grid-area: img6_1;
+}
+
+.destinos .item6 .imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.destinos .item6 .texto{
+    grid-area: img6_2;
+    align-self: center;
+}
+
+.destinos .item6 .botao{
+    grid-area: img6_3;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.destinos .item6 p{
+    font-size: 20px;
+    color: black;
+    text-shadow: 0 0 10px black;
+}
+
+@media(min-width:901px) {
+    .destinos {
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+        'img1 img2 img3 img6 img6' 
+        'img4 img4 img5 img6 img6';
+    }
+}
+
+@media(max-width:900px) {
+    .destinos {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-areas:
+        'img1 img2'
+        'img3 img5'
+        'img4 img4'
+        'img6 img6'
+        'img6 img6';
+    }
+}
+
+.tipo{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.nome{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    left: 5px;
+}
+
+.descricao{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    position: relative;
+    top: 110px;
+    left: 5px;
+}
+
 

@@ -3,31 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Diogo Silva">
-        <meta name="keywords" content="Lisboa">
-        <meta name="description" content="Website sobre Lisboa">
-    
+        <meta name="keywords" content="OS MELHORES DESTINOS">
+        <meta name="description" content="OS MELHORES DESTINOS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            * {box-sizing: border-box;}
-        </style>
-    
-        <link rel="shortcut icon" type="image/x-icon" href="../lab2/images/Portugal.ico"/>
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>    
+        <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
         <link rel="stylesheet" href="../lab4/estilos.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
-        </style>
+
     
-        <title>Lisboa</title>
+        <title>OS MELHORES DESTINOS</title>
     </head>
 
     <body>
 
         <div>
             <nav class="menu">
-                <a href="">Cidades Europeias</a>
-                <a href="">Dicas para viajar</a>
-                <a href="">Destinos de sonho</a>
-                <a href="">HOME</a>
+                <a href="#capitais">Cidades Europeias</a>
+                <a href="#dicas">Dicas para viajar</a>
+                <a href="#destinos">Destinos de sonho</a>
+                <a href="../index.html">HOME</a>
             </nav>
         </div>
         
@@ -37,7 +34,7 @@
 
         <h1>Capitais europeias</h1>
         
-        <div class="capitais">
+        <div class="capitais" id="capitais">
             <div>
                 <div><img src="images\lisboa.avif" alt=""></div>
                 <div><p>Lisboa</p></div>
@@ -53,51 +50,94 @@
         </div>
 
         <h1>Dicas para viajar</h1>
-        <div class="dicas">
+        <div class="dicas" id="dicas">
             <div>
-                <h1>Conselho para viajante</h1>
-                <p>Um excelente conselho para viagante que é excelente é o conselho
-                     para viajar que leva de forma excelente fora do conselho.</p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Conselho para viajante</h1>
+                <p>Conheça bem o amigo com quem você está viajando</p>
             </div>
             <div>
-                <h1>Outro conselho</h1>
-                <p>Um excelente conselho para viagante que é excelente é o conselho
-                    para viajar que leva de forma excelente fora do conselho.</p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Outro conselho</h1>
+                <p>Tenha um planejamento de viagem bem definido</p>
             </div>
             <div>
-                <h1>Dicas para viajante</h1>
-                <p>Uma excelente dica para viajante é dica para viajante que é excelente 
-                    para uma dica para viajante.
-                </p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Dicas para viajante</h1>
+                <p>Seja flexível no planejamento da sua viagem</p>
             </div>
             <div>
-                <h1>Viajar fora do conselho</h1>
-                <p>Uma excelente dica para viajante é dica para viajante que é excelente 
-                    para uma dica para viajante.
-                </p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Viajar fora do conselho</h1>
+                <p>Respeite o orçamento para uma viagem em grupo</p>
             </div>
             <div>
-                <h1>Viajar com indicação</h1>
-                <p>Uma excelente dica para viajante é dica para viajante que é excelente 
-                    para uma dica para viajante.
-                </p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Viajar com indicação</h1>
+                <p>Aprenda a respeitar a vontade dos outros durante a sua viagem</p>
             </div>
             <div>
-                <h1>Viajante com conselho</h1>
-                <p>Um excelente conselho para viagante que é excelente é o conselho
-                    para viajar que leva de forma excelente fora do conselho.</p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Viajante com conselho</h1>
+                <p>Reserve um tempo para si mesmo durante a sua viagem (e saiba que não há problema em se separar do grupo de vez em quando)</p>
             </div>
             <div>
-                <h1>Ainda outro conselho</h1>
-                <p>Um excelente conselho para viagante que é excelente é o conselho
-                    para viajar que leva de forma excelente fora do conselho.</p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Ainda outro conselho</h1>
+                <p>Aprenda a dividir tarefas com os amigos durante a sua viagem</p>
             </div>
             <div>
-                <h1>Dica para viajar</h1>
-                <p>Uma excelente dica para viajante é dica para viajante que é excelente 
-                    para uma dica para viajante.
-                </p>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> Dica para viajar</h1>
+                <p>Seja tolerante e paciente com os seus amigos de viagem</p>
             </div>
+        </div>
+
+        <h1>Destinos de sonho</h1>
+        <div class = "destinos" id="destinos">
+            <div class="item1">
+                <div class="tipo">BAIRRO</div>
+                <div class="nome">VIALONGA</div>
+                <div class="descricao">Pequeno bairro cheio de boa energias em Vila Franca de Xira</div>
+            </div>
+            <div class="item2">
+                <div class="tipo">DESPORTO</div>
+                <div class="nome">CAMPO GRANDE</div>
+                <div class="descricao">Cidade com o melhor estádio de Portugal</div>
+            </div>
+            <div class="item3">
+                <div class="tipo">RELIGIÃO</div>
+                <div class="nome">PORTO</div>
+                <div class="descricao">Cidade cheia de cultura e história</div>
+            </div>
+            <div class="item4">
+                <div class="tipo">SUNSET</div>
+                <div class="nome">ALGARVE</div>
+                <div class="descricao">Zona expetacular para ver o melhor SUNSET</div>
+            </div>
+            <div class="item5">
+                <div class="tipo">PRAIA</div>
+                <div class="nome">TRÓIA</div>
+                <div class="descricao">Zona calma e com águas maravilhosas</div>
+            </div>
+
+            <div class="item6">
+                <div class="imagem"><img src="images/6.jpg" alt=""></div>
+                <div class="texto">
+                    <h2>Orçamento curto</h2>
+                    <p>Pequenos orçamentos com grandes viagens.</p>
+                </div>
+                <div class="botao"><button>Explorar</button></div>
+            </div>
+
         </div>
 
     </body>
