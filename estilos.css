@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Indie+Flower&family=Lobster&family=Pacifico&display=swap');
+
+body {background-color: #a8acd3;
+     font-family: 'Hurricane', cursive;
+     font-family: 'Indie Flower', cursive;
+     font-family: 'Lobster', cursive;
+     font-family: 'Pacifico', cursive;}
+
+h1 {font-family: 'Hurricane', cursive;}
+a{color:rgb(38, 53, 61);}
+a:hover{background-color:gold;}
+a:visited {color:rgb(38, 53, 61);}
+
+
+
+
