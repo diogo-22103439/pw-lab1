@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+* {box-sizing: border-box;}
+* {font-family: 'Hurricane', cursive;}
+
+body { background-image: url("../lab5/images/head1.jpg");
+        height: 80vh; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        align-items: start;
+}
+
+h1:not(.dicas h1){
+    text-align: center;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.capitais { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgba(238, 248, 248, 0);
+    /*background-color: rgb(238, 248, 248);*/
+    padding: 50px;
+}
+
+.capitais p { 
+    font-size: 34px;
+}
+
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img{
+    border-radius: 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width:  150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.menu a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+
+.menu a:hover {
+    background-color: rgb(238, 248, 248);
+    font-weight: bold;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+.cabecalho{
+    background-color: rgba(238, 248, 248, 0);
+    /*background-image: url("../lab5/images/head1.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh; 
+    color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+}
+
+.dicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 248, 248, 0);
+    /*background-color: rgb(238, 248, 248);*/
+    padding: 50px;
+}
+
+.dicas h1{
+    position: relative;
+    top: 0px;
+    left: 5px;
+}
+
+.dicas p{
+    font-size: 23px;
+}
+
+.dicas div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px #888888;
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.destinos {
+    justify-content: center;
+    display: grid;
+    background-color: rgba(238, 248, 248, 0);
+    /*background-color: rgb(238, 248, 248);*/
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.destinos > div {
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destinos .item1 {
+    background-image: url('images/1.jpg');
+    grid-area: img1;
+}
+.destinos .item2 {
+    background-image: url('images/2.jpg');
+    grid-area: img2;
+}
+.destinos .item3 {
+    background-image: url('images/3.webp');
+    grid-area: img3;
+}
+.destinos .item4 {
+    background-image: url('images/4.jpg');
+    grid-area: img4;
+}
+.destinos .item5 {
+    background-image: url('images/5.jpg');
+    grid-area: img5;
+}
+
+.destinos .item6{
+    grid-area: img6;
+    background-color: rgb(238, 248, 248);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 150px;
+    grid-template-rows: 300px 100px;
+    grid-template-areas:
+    'img6_1 img6_1' 
+    'img6_2 img6_3';
+}
+
+.destinos .item6 .imagem{
+    grid-area: img6_1;
+}
+
+.destinos .item6 .imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.destinos .item6 .texto{
+    grid-area: img6_2;
+    align-self: center;
+}
+
+.destinos .item6 .botao{
+    grid-area: img6_3;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.destinos .item6 p{
+    font-size: 20px;
+    color: black;
+    text-shadow: 0 0 10px black;
+}
+
+.tipo{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.nome{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    left: 5px;
+}
+
+.descricao{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    position: relative;
+    top: 110px;
+    left: 5px;
+}
+
+
+.fotos{
+    background-image: url("../lab5/images/head1.jpg");
+        height: 90vh; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        align-items: start;
+
+    justify-content: center;
+    display: grid;
+    /*background-color: rgba(238, 248, 248, 0);*/
+    background-color: rgb(238, 248, 248);
+    padding: 20px;
+    grid-gap: 10px;
+    margin: 0 10vw;
+}
+
+
+.fotos > div {
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fotos p{
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+    padding-left: 5px;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+}
+
+.fotos > div:hover p{
+    visibility: visible;
+}
+
+.fotos .item1 {
+    grid-area: img1;
+}
+.fotos .item2 {
+    grid-area: img2;
+}
+.fotos .item3 {
+    grid-area: img3;
+}
+.fotos .item4 {
+    grid-area: img4;
+}
+.fotos .item5 {
+    grid-area: img5;
+}
+.fotos .item6 {
+    grid-area: img6;
+}
+.fotos .item7 {
+    grid-area: img7;
+}
+.fotos .item8 {
+    grid-area: img8;
+}
+.fotos .item9 {
+    grid-area: img9;
+}
+.fotos .item10 {
+    grid-area: img10;
+}
+.fotos .item11 {
+    grid-area: img11;
+}
+.fotos .item12 {
+    grid-area: img12;
+}
+
+@media(min-width:901px) {
+    .destinos {
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+        'img1 img2 img3 img6 img6' 
+        'img4 img4 img5 img6 img6';
+    }
+
+    .fotos {
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-areas:
+        'img1 img2 img3' 
+        'img4 img5 img6'
+        'img7 img8 img9'
+        'img10 img11 img12';
+    }
+}
+
+@media(max-width:900px) {
+    .destinos {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-areas:
+        'img1 img2'
+        'img3 img5'
+        'img4 img4'
+        'img6 img6'
+        'img6 img6';
+    }
+
+    .fotos {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-areas:
+        'img1 img2' 
+        'img3 img4'
+        'img5 img6'
+        'img7 img8';
+    }
+}
+
+@media(max-width:600px) {
+    .fotos {
+        grid-template-columns: 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-areas:
+        'img1'
+        'img2'
+        'img3'
+        'img4';
+    }
+}
